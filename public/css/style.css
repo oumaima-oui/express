@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/******header**********/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 6px;
+    background-color: #009688;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+li {
+    float: left;
+}
+li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+}
+.container {
+    background-color: #cccccc;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+.btn-style{
+    background-color: #3feddec5;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.log-buttons button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+h1{
+    text-align: left;
+    color: white;
+}
+.search{
+    float: left;
+    display: block;
+    color:black;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+h4{
+    color:white;
+    font-size: 25px;
+}
+/****contact****/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cccccc; 
+} 
+.contact ,.content{
+    max-width:1800px;
+    text-align: center;
+}  
+.contact ,.content h2{
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+}
+.contact,.content p{
+    font-weight: 500;
+    color:#fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.container ,.contactInfo, .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 20px;
+    height: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    font-size: 22px;
+}
+.container ,.contactInfo ,.box, .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 500;
+}
+.container ,.contactInfo,.box ,.text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactfrom{
+    width:300px;
+    padding: 100px;
+    background-color: #fff;
+}
+.contactfrom h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactfrom .inputBox{
+    position: relative;
+    width: 200%;
+    margin-top: 10px;
+}
+.contactfrom .inputBox input,
+.contactfrom .inputBox textarea
+{
+    width: 60%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid#333;
+    outline: none;
+    resize: none;
+} 
+.contactfrom .inputBox span{
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transform: 0.5s;
+    color: #666;
+}
+.contactfrom .inputBox input:focus ~ span,
+.contactfrom .inputBox input:valid ~ span,
+.contactfrom .inputBox textarea:focus ~ span,
+.contactfrom .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactfrom .inputBox input[type="submit" ]{
+    width:60px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo.contactfrom{
+        width: 100%;
+    }
+}
+/***footer***/
+footer{
+    font-weight: 100;
+    font-size: 0.8em;
+    border-top: 1px solid #009688;
+    text-align: center;
+    background-color:  #009688;
+    color: white;
+}
+/**** service****/
+.wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #cccccc;
+}
+.wrapper h1 {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding:30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    display: inline-block;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgb(0,0,0,0.2);
+    transform: 0.3s;
+}
+.card i{
+    margin: 20px;
+    color: #ff5724;
+}
+.card h2{
+   margin-bottom: 12px;
+   font-weight: 200;
+   text-align: center; 
+}
+.card p {
+    color:#6c757d;
+    text-align: center;
+}
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 600;
+    color: black;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45dsg,
+    rgba(225,28,8,0.8)0%,
+    rgba(255,0,82,0.8)100%),
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45dsg,
+    rgba(225,28,8,0.8)0%,
+    rgba(255,0,82,0.8)100%),
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45dsg,
+    rgba(225,28,8,0.8)0%,
+    rgba(255,0,82,0.8)100%),
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45dsg,
+    rgba(225,28,8,0.8)0%,
+    rgba(255,0,82,0.8)100%),
+}
+@media(max-width: 991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
